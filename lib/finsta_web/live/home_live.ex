@@ -13,10 +13,12 @@ defmodule FinstaWeb.HomeLive do
 
   def render(assigns) do
     ~H"""
+    <body style="background-color: green">
     <h1 class="text-2xl">Finsta</h1>
+    <h1>Hey phx!</h1>
     <.button type="button" phx-click={show_modal("new-post-modal")}>Create Post</.button>
 
-    <div id="feed" phx-update="stream" class="flex flex-col gap-2">
+    <div id="feed" phx-update="stream" class="flex flex-col gap-2" style="background-color: white;">
       <div :for={{dom_id, post} <- @streams.posts} id={dom_id} class="w-1/2 mx-auto flex flex-col gap-2 p-4 border rounded">
 
         <img src={post.image_path} />
@@ -33,6 +35,7 @@ defmodule FinstaWeb.HomeLive do
         <.button type="submit" phx-disable-with="Saving ...">Create Post</.button>
       </.simple_form>
     </.modal>
+    </body>
     """
   end
 
