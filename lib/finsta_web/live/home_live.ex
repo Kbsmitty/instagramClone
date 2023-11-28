@@ -5,21 +5,22 @@ defmodule FinstaWeb.HomeLive do
   alias Finsta.Posts.Post
 
   @impl true
+  @spec render(any()) :: Phoenix.LiveView.Rendered.t()
   def render(%{loading: true} = assigns) do
     ~H"""
-    Finsta is loading ...
+    Clonstagram is loading ...
     """
   end
 
   def render(assigns) do
     ~H"""
-    <body style="background-color: green">
-    <h1 class="text-2xl">Finsta</h1>
-    <h1>Hey phx!</h1>
-    <.button type="button" phx-click={show_modal("new-post-modal")}>Create Post</.button>
+    <div id="title" phx-update="stream" class="flex flex-col items-center justify-center gap-3" style="background-color: #FFF8E7; font-family: 'Century Gothic', sans-serif;">
+      <h1 class="text-5xl">Clonstagram</h1>
+      <.button type="button" phx-click={show_modal("new-post-modal")}>Create Post</.button>
+    </div>
 
-    <div id="feed" phx-update="stream" class="flex flex-col gap-2" style="background-color: white;">
-      <div :for={{dom_id, post} <- @streams.posts} id={dom_id} class="w-1/2 mx-auto flex flex-col gap-2 p-4 border rounded">
+    <div id="feed" phx-update="stream" class="flex flex-col gap-2" style="background-color: #FFF8E7;">
+      <div :for={{dom_id, post} <- @streams.posts} id={dom_id} class="w-1/2 mx-auto flex flex-col gap-2 p-4 border rounded" style="background-color: #D3D3D3;">
 
         <img src={post.image_path} />
         <p><%= post.user.email %></p>
@@ -35,7 +36,6 @@ defmodule FinstaWeb.HomeLive do
         <.button type="submit" phx-disable-with="Saving ...">Create Post</.button>
       </.simple_form>
     </.modal>
-    </body>
     """
   end
 

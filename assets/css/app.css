@@ -1,5 +1,11 @@
+/* assets/css/app.css */
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+
+body {
+    background-color: green;
+  }
