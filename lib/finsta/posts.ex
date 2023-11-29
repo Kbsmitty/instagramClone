@@ -19,4 +19,12 @@ defmodule Finsta.Posts do
     |> Post.changeset(post_params)
     |> Repo.insert()
   end
+
+  def delete_post(post_id) do
+    # Create a changeset with only the ID field set
+    changeset = Post.changeset(%Post{}, %{id: post_id})
+
+    # Use the changeset to delete the post by ID
+    Repo.delete(changeset)
+  end
 end

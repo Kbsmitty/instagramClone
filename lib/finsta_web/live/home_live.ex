@@ -8,14 +8,14 @@ defmodule FinstaWeb.HomeLive do
   @spec render(any()) :: Phoenix.LiveView.Rendered.t()
   def render(%{loading: true} = assigns) do
     ~H"""
-    Clonstagram is loading ...
+    Clonestagram is loading ...
     """
   end
 
   def render(assigns) do
     ~H"""
     <div id="title" phx-update="stream" class="flex flex-col items-center justify-center gap-3" style="background-color: #FFF8E7; font-family: 'Century Gothic', sans-serif;">
-      <h1 class="text-5xl">Clonstagram</h1>
+      <h1 class="text-5xl">Clonestagram</h1>
       <.button type="button" phx-click={show_modal("new-post-modal")}>Create Post</.button>
     </div>
 
@@ -62,6 +62,15 @@ defmodule FinstaWeb.HomeLive do
   end
 
   @impl true
+  def handle_event({:delete_post, %{dom_id: dom_id}}, _params, socket) do
+    post = Enum.find_value(@streams.posts, fn {id, _} -> id == dom_id end)
+    Posts.delete_post(post.id)
+
+    Phoenix.PubSub.broadcast(Finsta.PubSub, "posts", {:delete, post.id})
+
+    {:noreply, socket}
+  end
+
   def handle_event("validate", _params, socket) do
     {:noreply, socket}
   end
