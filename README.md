@@ -2,7 +2,8 @@
 
 Project Overview
 ## Contributors: 
-Kyler Smith - https://github.com/Kbsmitty/instagramClone 
+Kyler Smith - https://github.com/Kbsmitty/instagramClone
+
 Lucas Rowsey - https://github.com/lrowsey/PhoenixFramework
 
 ## Project Description
