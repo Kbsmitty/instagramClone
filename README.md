@@ -1,10 +1,9 @@
-## Phoenix Framework Final Project
+Phoenix Framework Final Project
 
-## Project Overview
-
+Project Overview
 ## Contributors: 
-Kyler Smith (GitHub)
-Lucas Rowsey
+Kyler Smith - https://github.com/Kbsmitty/instagramClone 
+Lucas Rowsey - https://github.com/lrowsey/PhoenixFramework
 
 ## Project Description
 
