@@ -1,4 +1,4 @@
-Phoenix Framework Final Project
+## Phoenix Framework Final Project
 
 Project Overview
 ## Contributors: 
