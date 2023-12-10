@@ -24,6 +24,9 @@ https://github.com/lrowsey/PhoenixFramework
 
 Our primary objective was to develop a demonstrative social media application similar to Twitter. The focus was on leveraging the capabilities of the Phoenix Framework to streamline the development process, making it more efficient and less labor-intensive. 
 
+## Contribution
+Kyler - I made the instagram clone with Lucas's help. I implemented most of the features on the Instagram clone website including the login functoin, post function, and the function to add a photo to a post. Most of the work was in claburation and we helped as needed. 
+
 ## Technology Summary
 
 ## Phoenix Framework
