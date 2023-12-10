@@ -1,4 +1,6 @@
 ## Phoenix Framework Final Project
+Project Video: 
+Project SlideShow: https://docs.google.com/presentation/d/1BHY1KS9BfiNifZYEc7xZvHrAFc13diw-i57SZkNOaRs/edit?usp=sharing
 
 Project Overview
 ## Contributors: 
