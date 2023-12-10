@@ -48,12 +48,11 @@ To run the project locally, follow these steps:
 
 *	Visit ‘http://localhost:4000’
 
-  ## Kylers Takeaway
-
-  I think the Phoenix Framework is very useful and has a lot of great tools such as Liveview and project creation. I thought it was super cool to learn about Elixir and all the different technologies that go into Phoenix. A downside to that, was trouble shooting syntax, as well as implementing Elixir and the Phoenix Framework into the project. Trying to host a website that uses the framework is also a bit of a nightmare and it would help if they had a bit more documentation for it, especially with the newest release of Phoenix. 
-
 ## Resources
 Phoenix Framework Official Website
 Phoenix Framework Documentation
 Phoenix Framework GitHub Repository
 
+## Kylers Takeaways
+
+I think the Phoenix Framework is very useful and has a lot of great tools such as Liveview and project creation. I thought it was super cool to learn about Elixir and all the different technologies that go into Phoenix. A downside to that, was trouble shooting syntax, as well as implementing Elixir and the Phoenix Framework into the project. Trying to host a website that uses the framework is also a bit of a nightmare and it would help if they had a bit more documentation for it, especially with the newest release of Phoenix. Otherwise, I could see myself implementing Phoenix or something similar in the future to make my website more user friendly and versatile. 
