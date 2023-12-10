@@ -1,5 +1,5 @@
 ## Phoenix Framework Final Project
-Project Video: 
+Project Video: https://cdn.discordapp.com/attachments/1170601029952352267/1183530674997690408/webDemo.mp4?ex=6588abd5&is=657636d5&hm=17d0321ab02ec34ed11a51d588d5b3dc4b718008606f31f5d2625758eead7297&
 Project SlideShow: https://docs.google.com/presentation/d/1BHY1KS9BfiNifZYEc7xZvHrAFc13diw-i57SZkNOaRs/edit?usp=sharing
 
 Project Overview
